@@ -1,0 +1,57 @@
+Bien sûr, voici maintenant le code HTML pour afficher dynamiquement le contenu du fichier JSON :
+
+index.html :
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content {
+            margin: 0 auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div id="content"></div>
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                let content = document.getElementById('content');
+                data.forEach(item => {
+                    let div = document.createElement('div');
+                    div.innerHTML = `
+                        <h2>${item.title}</h2>
+                        <p>${item.description}</p>
+                    `;
+                    content.appendChild(div);
+                });
+            })
+            .catch(error => console.error(error));
+    </script>
+</body>
+</html>
+```
+Et voici le code CSS pour styliser la page :
+
+styles.css :
+```css
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    padding: 20px;
+}
+
+#content h2 {
+    margin-top: 0;
+}
+```
+En résumé, le code HTML utilise la fonction `fetch` pour récupérer le contenu du fichier `data.json`, puis il utilise une boucle `forEach` pour afficher dynamiquement le contenu dans la div `content`. Le code CSS stylise simplement la page en définissant les polices et les marges.

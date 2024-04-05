@@ -1,0 +1,95 @@
+Je suis heureux de vous aider! Voici un autre exemple de code CSS pour un site web simple :
+```css
+/* Réinitialisation des styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style global */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f2f2f2;
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* En-tête */
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+header h1 {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+/* Menu principal */
+nav {
+  background-color: #444;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Section principale */
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Bouton */
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Pied de page */
+footer {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+```
+Ce code CSS comprend des styles pour la réinitialisation des éléments HTML, le corps de la page, un conteneur principal, un en-tête, un menu principal, une section principale, des images, un bouton et un pied de page. Vous pouvez copier et coller ce code dans votre fichier `style.css` et le personnaliser en fonction de vos besoins.

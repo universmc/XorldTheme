@@ -1,0 +1,70 @@
+Bien sûr, voici maintenant le code HTML pour afficher dynamiquement les données en utilisant le fichier JSON :
+
+index.html:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #data {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="data"></div>
+    </div>
+
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const dataDiv = document.getElementById('data');
+                data.forEach(item => {
+                    const title = document.createElement('h2');
+                    title.textContent = item.title;
+                    dataDiv.appendChild(title);
+                    const description = document.createElement('p');
+                    description.textContent = item.description;
+                    dataDiv.appendChild(description);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>
+```
+Et voici le code CSS pour styliser la page :
+
+index.css:
+```css
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#content {
+    width: 100%;
+    max-width: 800px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+```
+Et voilà, vous avez maintenant le code HTML, CSS et JSON pour afficher dynamiquement une page d'index.

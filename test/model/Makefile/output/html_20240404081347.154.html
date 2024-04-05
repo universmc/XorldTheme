@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Styled Page</title>
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ font-family: Arial, sans-serif;
+ line-height: 1.6;
+ }
+
+ a {
+ text-decoration: none;
+ color: #333;
+ }
+
+ ul {
+ list-style: none;
+ }
+
+ .container {
+ max-width: 1100px;
+ margin: auto;
+ overflow: hidden;
+ }
+
+ .header {
+ background-color: #333;
+ color: #fff;
+ padding: 1rem 0;
+ }
+
+ .header h1 {
+ float: left;
+ }
+
+ nav {
+ float: right;
+ }
+
+ nav li {
+ display: inline;
+ padding: 0 1rem;
+ }
+
+ .main-content {
+ padding: 2rem;
+ }
+
+ .featured-post {
+ background-color: #f4f4f4;
+ padding: 2rem;
+ margin-bottom: 2rem;
+ }
+
+ .featured-post img {
+ max-width: 100%;
+ height: auto;
+ }
+
+ .article-list {
+ display: flex;
+ flex-wrap: wrap;
+ }
+
+ .article-summary {
+ width: calc(33.333% - 2rem);
+ margin-right: 2rem;
+ margin-bottom: 2rem;
+ }
+
+ .article-summary:nth-child(3n) {
+ margin-right: 0;
+ }
+
+ .article-title {
+ margin-bottom: 1rem;
+ }
+
+ .article-info {
+ color: #666;
+ }
+
+ .footer {
+ background-color: #333;
+ color: #fff;
+ text-align: center;
+ padding: 1.5rem;
+ margin-top: 1.5rem;
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <header class="header">
+ <h1>My Blog</h1>
+ <nav>
+ <ul>
+ <li><a href="#">Home</a></li>
+ <li><a href="#">About</a></li>
+ <li><a href="#">Contact</a></li>
+ </ul>
+ </nav>
+ </header>
+ <div class="main-content">
+ <div class="featured-post">
+ <h2>Featured Post</h2>
+ <img src="https://via.placeholder.com/1200x400" alt="Featured Image">
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ligula vitae nisi tincidunt dapibus. Pellentesque venenatis metus ac orci imperdiet, nec pellentesque velit tempus.</p>
+ <a href="#">Read More</a>
+ </div>
+ <div class="article-list">
+ <div class="article-summary">
+ <h2 class="article-title">Article Title 1</h2>
+ <p class="article-info">
+ <time datetime="2022-01-01">January 1, 2022</time>
+ <span>By John Doe</span>
+ </p>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget ligula vitae nisi tincidunt dapibus. Pellentesque venenatis metus ac orci imperdiet, nec pellentesque velit tempus.</p>
+ </div>
+ <!-- More article summaries... -->
+ </div>
+ </div>
+ </div>
+ <footer class="footer">
+ &copy; 2022 My Blog. All Rights Reserved.
+ </footer>
+</body>
+</html>
+
+N'hésitez pas à personnaliser le contenu et les styles en fonction de vos besoins.

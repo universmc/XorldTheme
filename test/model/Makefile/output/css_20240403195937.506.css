@@ -1,0 +1,85 @@
+Bien sûr, voici un exemple de fichier style.css pour une mise en page simple avec une disposition en colonnes et quelques styles de base pour les titres et les liens :
+
+```css
+/* Reset styles for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the body element */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Style for the container element */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Style for the header element */
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for the main element */
+main {
+  float: left;
+  width: 70%;
+  padding: 20px;
+}
+
+/* Style for the aside element */
+aside {
+  float: left;
+  width: 30%;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Style for the footer element */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+}
+
+/* Style for h1 elements */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Style for h2 elements */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Style for p elements */
+p {
+  margin-bottom: 20px;
+}
+
+/* Style for a elements */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/* Style for a:hover elements */
+a:hover {
+  text-decoration: underline;
+}
+```
+
+Ce code CSS fournit un formatage de base pour une page Web avec une disposition en colonnes et des styles pour les titres, les liens et les paragraphes. Vous pouvez le personnaliser en fonction des besoins spécifiques de votre projet.

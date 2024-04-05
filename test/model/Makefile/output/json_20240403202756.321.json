@@ -1,0 +1,64 @@
+Bien sûr, voici maintenant le code HTML pour afficher dynamiquement le contenu du fichier JSON :
+
+index.html :
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+```
+Voici le code CSS pour styliser la page :
+
+styles.css :
+```css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+```
+Enfin, voici le code JavaScript pour lire et afficher dynamiquement le contenu du fichier JSON :
+
+script.js :
+```javascript
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        const content = document.getElementById('content');
+        const title = document.createElement('h1');
+        title.textContent = data.title;
+        content.appendChild(title);
+        data.paragraphs.forEach(paragraph => {
+            const p = document.createElement('p');
+            p.textContent = paragraph;
+            content.appendChild(p);
+        });
+    })
+    .catch(error => console.error('Error:', error));
+```
+Notez que ce code utilise la méthode `fetch()` pour récupérer le contenu du fichier JSON. Ensuite, il utilise la méthode `json()` pour analyser le contenu JSON et renvoyer un objet JavaScript. Enfin, il utilise le DOM pour créer des éléments HTML et les ajouter à la page.

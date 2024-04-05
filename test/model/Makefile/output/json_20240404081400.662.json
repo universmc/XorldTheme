@@ -1,0 +1,74 @@
+Bien sûr, voici maintenant le code HTML pour afficher dynamiquement le contenu du fichier JSON :
+
+index.html :
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px;
+        }
+        .card h2 {
+            margin: 0;
+        }
+        .card p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="content"></div>
+
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                let content = document.getElementById('content');
+                data.forEach(item => {
+                    let card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <h2>${item.title}</h2>
+                        <p>${item.description}</p>
+                    `;
+                    content.appendChild(card);
+                });
+            });
+    </script>
+</body>
+</html>
+```
+Et le code CSS pour styliser les cartes :
+
+index.css :
+```css
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+}
+.card h2 {
+    margin: 0;
+}
+.card p {
+    margin: 10px 0;
+}
+```
+Notez que le code JavaScript utilise la méthode `fetch` pour récupérer le contenu du fichier JSON, puis itère sur les éléments pour les afficher dans des cartes HTML. Vous pouvez personnaliser le code CSS pour adapter l'apparence des cartes à vos besoins.

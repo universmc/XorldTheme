@@ -1,0 +1,67 @@
+Bien sûr, voici un exemple de fichier style.css pour une page web minimaliste :
+```css
+/* Global Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation Styles */
+
+nav {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* Main Content Styles */
+
+main {
+  padding: 20px;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+  header, nav, main, footer {
+    width: 100%;
+  }
+}
+```
+Ce code est un exemple de fichier CSS pour une page web simple avec une en-tête, une navigation, un contenu principal et un pied de page. Il utilise également des requêtes médias pour rendre le design réactif et s'adapter aux différentes tailles d'écran.
+
+Notez que ce code peut être modifié et étendu selon les besoins de votre projet web.

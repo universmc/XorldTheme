@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            float: left;
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav li {
+            display: inline;
+            padding: 0 10px;
+        }
+
+        main {
+            padding: 3rem 0;
+        }
+
+        main h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        main p {
+            margin-bottom: 1.5rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1,
+            nav {
+                float: none;
+                text-align: center;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>Welcome to my website</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque auctor, est sed vestibulum vestibulum,
+            velit velit venenatis nisl, vel aliquet lorem nisi et sapien. Sed bibendum ultrices ante, non laoreet ex
+            volutpat eget.</p>
+        <p>Curabitur sit amet turpis massa. Sed porttitor scelerisque ante, non lacinia ex volutpat eget. Sed
+            consequat, sapien a accumsan interdum, nisi velit dapibus nunc, et interdum ex nisi et sapien. Sed bibendum
+            ultrices ante, non laoreet ex volutpat eget.</p>
+    </main>
+    <footer class="container">
+        &copy; 2022 My Website
+    </footer>
+</body>
+
+</html>[```vbnet]
+
+This code creates a simple webpage with a header, navigation, main content, and footer. The layout is responsive,
+meaning it will adjust to different screen sizes. The CSS is included in a `<style>` tag in the `<head>` of the
+document.
+
+The HTML structure is as follows:
+
+- `<header>`: contains the site title and navigation
+- `<main>`: contains the main content
+- `<footer>`: contains the site footer
+
+I hope this helps! Let me know if you have any questions.
